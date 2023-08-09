@@ -1,4 +1,7 @@
 import './globals.css'
+import 'swiper/css';
+import 'swiper/css/navigation';
+
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Appbar from "../components/layouts/Appbar";

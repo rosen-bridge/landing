@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Heading({title, description}) {
     return (
-        <div className="container max-w-screen-md">
+        <div className="container max-w-screen-md mx-auto">
             <h2
                 className="mt-12 text-2xl sm:text-3xl lg:text-4xl font-bold color-primary leading-relaxed text-center"
             >
