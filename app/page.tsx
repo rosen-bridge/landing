@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Button from "../components/buttons/Button";
 import Heading from "../components/typography/Heading";
 import GuardSet from "./_sections/GuardSet";
+import RoadMap from "./_sections/RoadMap";
 
 export default function Home() {
     return (
@@ -42,10 +43,7 @@ export default function Home() {
             </section>
 
             <section id="road-map">
-                <Heading
-                    title="Road map"
-                />
-                <div className="h-80"/>
+                <RoadMap/>
             </section>
         </main>
     )
