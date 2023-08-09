@@ -21,17 +21,34 @@ export default function Home() {
                 </div>
             </section>
 
-            <section>
+            <section id="guard-set">
                 <Heading
                     title="Guard set"
                     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eleifend dui at efficitur accumsan. Donec laoreet iaculis metus. Duis pulvinar nisi ipsum, quis tristique lorem commodo non. Praesent hendrerit at metus eleifend commodo. Ut iaculis lobortis augue. Nunc tortor mi, volutpat vitae velit sed, fringilla condimentum nunc."
                 />
+                <div className="h-80"/>
             </section>
 
-            <section>
+            <section id="architecture">
+                <Heading
+                    title="Architecture"
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eleifend dui at efficitur accumsan. Donec laoreet iaculis metus. Duis pulvinar nisi ipsum, quis tristique lorem commodo non. Praesent hendrerit at metus eleifend commodo. Ut iaculis lobortis augue. Nunc tortor mi, volutpat vitae velit sed, fringilla condimentum nunc."
+                />
+                <div className="h-80"/>
+            </section>
+
+            <section id="tokenomics">
+                <Heading
+                    title="Tokenomics"
+                />
+                <div className="h-80"/>
+            </section>
+
+            <section id="road-map">
                 <Heading
                     title="Road map"
                 />
+                <div className="h-80"/>
             </section>
         </main>
     )
