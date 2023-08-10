@@ -4,6 +4,7 @@ import GuardSet from "./_sections/GuardSet";
 import RoadMap from "./_sections/RoadMap";
 import Hero from "./_sections/Hero";
 import Tokenomics from "./_sections/Tokenomics";
+import GetStarted from "./_sections/GetStarted";
 
 export default function Home() {
     return (
@@ -28,6 +29,9 @@ export default function Home() {
             </section>
             <section id="road-map">
                 <RoadMap/>
+            </section>
+            <section>
+                <GetStarted/>
             </section>
         </main>
     )

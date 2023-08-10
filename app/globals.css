@@ -28,6 +28,9 @@
 .text-secondary {
   @apply text-slate-500;
 }
+.text-secondary-dark {
+  @apply text-slate-300;
+}
 .color-accent {
   color: var(--color-accent);
 }
