@@ -1,7 +1,6 @@
 "use client"
 import React, { useState, useEffect } from "react";
 import { Link as LinkScroll } from "react-scroll";
-import ButtonOutline from "../buttons/Button";
 
 const NavLink = ({to, offset=-60, children}) => {
     return (
@@ -33,23 +32,21 @@ export default function Appbar() {
     return (
         <header
             className={
-                "fixed top-0 w-full z-30 bg-white transition-all " +
-                (scrollActive ? " shadow-md pt-0" : " pt-4")
+                "fixed top-0 w-full z-30 transition-all " +
+                (scrollActive ? " shadow-md bg-glass backdrop-blur pt-0" : " pt-4")
             }
         >
-            <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
-                <div className="col-start-1 col-end-2 flex items-center">
-                    <img src="./vercel.svg" className="h-8 w-auto" />
+            <nav className="container mx-auto flex px-8 py-2">
+                <div className="flex gap-4 items-center">
+                    <img src="./assets/logo/rosen-logo.svg" className="h-12 w-auto" alt=""/>
+                    <img src="./assets/logo/rosen-typo-h.svg" className="h-4 w-auto" alt="ROSEN BRIDGE"/>
                 </div>
-                <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center nav navbar-nav">
+                <ul className="hidden md:flex grow justify-center items-center">
                     <NavLink to="guard-set">Guard set</NavLink>
                     <NavLink to="architecture">Architecture</NavLink>
                     <NavLink to="tokenomics">Tokenomics</NavLink>
                     <NavLink to="road-map">Road Map</NavLink>
                 </ul>
-                <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-                    <ButtonOutline>Get started</ButtonOutline>
-                </div>
             </nav>
         </header>
     );
