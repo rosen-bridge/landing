@@ -23,7 +23,7 @@
 /*}*/
 
 .text-primary {
-  @apply text-slate-800;
+  @apply text-slate-900;
 }
 .text-secondary {
   @apply text-slate-500;
@@ -69,4 +69,24 @@
 }
 .cold {
   fill: var(--color-tertiary);
+}
+
+.table thead th {
+  @apply color-quaternary text-left text-sm font-thin
+}
+.table tr:nth-child(even) {
+  @apply bg-slate-100
+}
+.table :is(td,th) {
+  @apply py-4 px-4 text-primary
+}
+.table :is(td,th):first-of-type {
+  @apply rounded-tl-lg rounded-bl-lg
+}
+.table :is(td,th):last-of-type {
+  @apply rounded-tr-lg rounded-br-lg
+}
+
+.block {
+  @apply container mx-auto px-16
 }

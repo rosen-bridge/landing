@@ -3,6 +3,7 @@ import Heading from "../components/typography/Heading";
 import GuardSet from "./_sections/GuardSet";
 import RoadMap from "./_sections/RoadMap";
 import Hero from "./_sections/Hero";
+import Tokenomics from "./_sections/Tokenomics";
 
 export default function Home() {
     return (
@@ -23,12 +24,8 @@ export default function Home() {
             </section>
 
             <section id="tokenomics">
-                <Heading
-                    title="Tokenomics"
-                />
-                <div className="h-80"/>
+                <Tokenomics/>
             </section>
-
             <section id="road-map">
                 <RoadMap/>
             </section>
