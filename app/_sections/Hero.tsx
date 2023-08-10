@@ -10,13 +10,13 @@ export default function Hero() {
                     <circle cx={120} cy={20} r={50} className="hot"/>
                 </svg>
             </div>
-            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2">
+            <div className="block grid grid-cols-1 md:grid-cols-2">
                 <div className="col-start-1 md:col-start-2">
                     <img className="scale-125" src="./assets/hero/hero.svg"/>
                 </div>
 
                 <div className="row-start-2 md:row-start-1  flex flex-col justify-center items-start px-8">
-                    <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium color-primary leading-normal">
+                    <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold color-primary leading-normal">
                         Lorem ipsum dolor sit <span className="color-accent italic">amet!</span>
                     </h1>
                     <p className="mt-4 mb-6 text-secondary text-base">

@@ -36,12 +36,12 @@ export default function Appbar() {
                 (scrollActive ? " shadow-md bg-glass backdrop-blur pt-0" : " pt-4")
             }
         >
-            <nav className="container mx-auto flex px-8 py-2">
+            <nav className="block flex px-8 py-2">
                 <div className="flex gap-4 items-center">
                     <img src="./assets/logo/rosen-logo.svg" className="h-12 w-auto" alt=""/>
                     <img src="./assets/logo/rosen-typo-h.svg" className="h-4 w-auto" alt="ROSEN BRIDGE"/>
                 </div>
-                <ul className="hidden md:flex grow justify-center items-center">
+                <ul className="hidden lg:flex grow justify-center items-center">
                     <NavLink to="guard-set">Guard set</NavLink>
                     <NavLink to="architecture">Architecture</NavLink>
                     <NavLink to="tokenomics">Tokenomics</NavLink>

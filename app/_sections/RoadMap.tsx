@@ -3,7 +3,7 @@ import Heading from "../../components/typography/Heading";
 
 const MapCard = ({number=1, right=false, children}) => {
     return (
-        <div className={`mt-16 ${right ? "pe-8" : "ps-8"} relative`} >
+        <div className="mt-16 relative">
             <div className={`absolute ${right ? "start-0" : "end-0"} z-1 -translate-y-1/2 ${right ? "-translate-x-1/2" : "translate-x-1/2"} rounded-full bg-secondary color-quaternary font-bold flex justify-center items-center w-10 h-10`}>
                 Q{number}
             </div>
@@ -150,7 +150,7 @@ export default function RoadMap() {
             <Heading
                 title="Road map"
             />
-            <div className="container grid grid-cols-2 mt-8">
+            <div className="block grid grid-cols-2 mt-8">
                 {roadMapData.map((section,index) => (
                     <Fragment key={index}>
                         <div className="col-span-2">
