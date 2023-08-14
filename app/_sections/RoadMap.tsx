@@ -9,7 +9,7 @@ const MapCard = ({number=1, right=false, children}) => {
             </div>
             <div className="h-2 bg-secondary rounded-tl-lg rounded-tr-lg"/>
             <div className={`${right ? "ms-16" : "me-16"}`}>
-                <div className="bg-white right:bg-primary rounded-bl-lg rounded-br-lg shadow-md p-8 flex flex-col gap-4">
+                <div className="bg-glass right:bg-primary rounded-bl-lg rounded-br-lg shadow-md p-8 flex flex-col gap-4">
                     {children}
                 </div>
             </div>
@@ -40,6 +40,15 @@ const MapYear = ({children}) => {
         </div>
     )
 }
+
+const StickyBackground = () => (
+    <div className="sticky top-0 -z-10 w-full h-0">
+        <svg viewBox="0 0 160 90" className="blur-2xl opacity-10">
+            <circle cx={120} cy={30} r={40} className="cold"/>
+            <circle cx={40} cy={60} r={30} className="hot"/>
+        </svg>
+    </div>
+)
 
 export default function RoadMap() {
     const roadMapData = [
@@ -150,6 +159,7 @@ export default function RoadMap() {
             <Heading
                 title="Road map"
             />
+            <StickyBackground/>
             <div className="block grid grid-cols-2 mt-8">
                 {roadMapData.map((section,index) => (
                     <Fragment key={index}>

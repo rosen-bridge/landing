@@ -8,7 +8,7 @@ import GetStarted from "./_sections/GetStarted";
 
 export default function Home() {
     return (
-        <main className="pt-24 overflow-x-hidden">
+        <main className="pt-24">
             <section className="w-full">
                 <Hero/>
             </section>
