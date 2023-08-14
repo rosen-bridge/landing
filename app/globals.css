@@ -93,3 +93,9 @@
 .block {
   @apply container mx-auto px-8 lg:px-24
 }
+.heading-2 {
+  @apply text-xl lg:text-2xl font-bold color-secondary relative  after:content-[''] after:absolute after:w-16 after:h-1 after:-bottom-1 after:left-0
+}
+.heading-2:after {
+  @apply bg-secondary
+}
