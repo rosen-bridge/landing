@@ -40,6 +40,9 @@
 .color-secondary {
   color: var(--color-secondary);
 }
+.color-tertiary {
+  color: var(--color-tertiary);
+}
 .color-quaternary {
   color: var(--color-quaternary);
 }
@@ -51,6 +54,9 @@
 }
 .bg-secondary {
   background-color: var(--color-secondary);
+}
+.bg-quaternary {
+  background-color: var(--color-quaternary);
 }
 .bg-glass {
   background-color: rgba(255,255,255,0.6);

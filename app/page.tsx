@@ -5,6 +5,7 @@ import Hero from "./_sections/Hero";
 import Tokenomics from "./_sections/Tokenomics";
 import GetStarted from "./_sections/GetStarted";
 import Architecture from "./_sections/Architecture";
+import Features from "./_sections/Features";
 
 export default function Home() {
     return (
@@ -14,6 +15,9 @@ export default function Home() {
             </section>
             <section id="guard-set" className="w-full">
                 <GuardSet/>
+            </section>
+            <section id="features">
+                <Features/>
             </section>
             <section id="architecture">
                 <Architecture/>
