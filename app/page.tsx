@@ -6,6 +6,7 @@ import Tokenomics from "./_sections/Tokenomics";
 import GetStarted from "./_sections/GetStarted";
 import Architecture from "./_sections/Architecture";
 import Features from "./_sections/Features";
+import Verifications from "./_sections/Verifications";
 
 export default function Home() {
     return (
@@ -21,6 +22,9 @@ export default function Home() {
             </section>
             <section id="architecture">
                 <Architecture/>
+            </section>
+            <section id="verifications">
+                <Verifications/>
             </section>
             <section id="tokenomics">
                 <Tokenomics/>

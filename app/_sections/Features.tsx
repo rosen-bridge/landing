@@ -52,7 +52,7 @@ export default function Features() {
                             <div className="mx-auto w-12 h-12 rounded-full bg-secondary text-white flex justify-center items-center text-lg">
                                 {item.icon}
                             </div>
-                            <h3 className="text-primary text-md text-center font-bold mt-3">{item.title}</h3>
+                            <h5 className="text-primary text-md text-center font-bold mt-3">{item.title}</h5>
                             <p className="text-secondary text-sm text-center mt-1">{item.description}</p>
                         </div>
                     ))}

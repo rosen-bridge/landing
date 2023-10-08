@@ -105,3 +105,51 @@
 .heading-2:after {
   @apply bg-secondary
 }
+
+.card-pattern {
+  border-top: 8px solid #587c8b;
+}
+.card-pattern .description {
+  opacity: 0;
+  background-color: #415c68;
+  background: linear-gradient(180deg, #587c8b 0, #415c68 30%);
+  transition: 300ms;
+}
+.card-pattern:hover .description {
+  opacity: 1;
+}
+
+.cube {
+  width: 70px;
+  height: 80px;
+  overflow: hidden;
+  
+}
+.face {
+  transform-origin: 0 0;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.front {
+  background: #587c8b;
+  -ms-transform: rotate(-30deg) skewX(-30deg) translate(130px, 172px) scaleY(0.864);
+  -webkit-transform: rotate(-30deg) skewX(-30deg) translate(130px, 172px) scaleY(0.864);
+  transform: rotate(-30deg) skewX(-30deg) translate(130px, 172px) scaleY(0.864) ;
+}
+.top {
+  background: #5b8090;
+  -ms-transform: rotate(210deg) skew(-30deg) translate(-200px, -60px) scaleY(0.864);
+  -webkit-transform: rotate(210deg) skew(-30deg) translate(-200px, -60px) scaleY(0.864);
+  transform:  rotate(210deg) skew(-30deg) translate(-200px, -60px) scaleY(0.864) ;
+}
+.side {
+  background: #45626e;
+  -ms-transform: rotate(90deg) skewX(-30deg) scaleY(0.864) translate(68px, -131px);
+  -webkit-transform: rotate(90deg) skewX(-30deg) scaleY(0.864) translate(68px, -131px);
+  transform: rotate(90deg) skewX(-30deg) scaleY(0.864) translate(68px, -131px);
+}
