@@ -66,6 +66,7 @@ export default function Verifications() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                     {layers.map((item, index) => (
                         <div key={index} className="bg-glass rounded-lg shadow-md p-8 pt-0 relative card-pattern ">
+                            <div className="absolute z-10 top-5 text-white text-5xl font-bold px-2">{index+1}</div>
                             <div className="absolute z-10" style={{top: '-5.6rem', right: '7rem'}}>
                                 <div className='cube'>
                                     <div className='face front text-2xl'>{item.icons[0]}</div>
@@ -73,7 +74,9 @@ export default function Verifications() {
                                     <div className='face top text-2xl'>{item.icons[2]}</div>
                                 </div>
                             </div>
-                            <img src={`/assets/patterns/pat-${index%4+1}.png`} className="opacity-50"/>    
+                            <div className="opacity-50 h-20 overflow-hidden">
+                                <img src={`/assets/patterns/pat-${index%4+1}.png`} className="h-full max-w-none"/>    
+                            </div>
                             <h5 className="text-primary text-md font-bold mt-4">{item.title}</h5>
                             <p className="text-secondary text-sm  mt-2">{item.subtitle}</p>
                             <div className="absolute z-20 w-full h-full rounded-bl-lg rounded-br-lg description text-white top-0 left-0 p-8">
