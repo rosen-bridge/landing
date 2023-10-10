@@ -13,10 +13,9 @@ export default function Hero() {
             </div>
             <div className="block grid grid-cols-1 md:grid-cols-2">
                 <div className="col-start-1 md:col-start-2">
-                    <img className="scale-125" src="./assets/hero/hero.svg"/>
+                    <img className="lg:scale-125" src="./assets/hero/hero.svg"/>
                 </div>
-
-                <div className="row-start-2 md:row-start-1  flex flex-col justify-center items-start pe-16 pt-16">
+                <div className="row-start-2 md:row-start-1  flex flex-col justify-center items-start md:pe-16 lg:pt-16">
                     <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold color-primary leading-normal">
                         Lorem ipsum dolor sit <span className="color-accent italic">amet!</span>
                     </h1>
@@ -24,14 +23,12 @@ export default function Hero() {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eleifend dui at efficitur accumsan. Donec laoreet iaculis metus.
                     </p>
                     <Button>Get started</Button>
-
                     <div className="mt-16 flex gap-16">
                         <StatItem label="lorem ipsum" value={1.5e7}/>
                         <StatItem label="dolor sit" value={100}/>
                         <StatItem label="consectetur" value={5000}/>
                     </div>
                 </div>
-
             </div>
         </div>
     )
