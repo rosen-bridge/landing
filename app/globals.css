@@ -55,6 +55,9 @@
 .bg-secondary {
   background-color: var(--color-secondary);
 }
+.bg-tertiary {
+  background-color: var(--color-tertiary);
+}
 .bg-quaternary {
   background-color: var(--color-quaternary);
 }
