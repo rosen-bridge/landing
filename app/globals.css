@@ -21,6 +21,9 @@
 /*    --background-end-rgb: 0, 0, 0;*/
 /*  }*/
 /*}*/
+html{
+  scroll-behavior:smooth
+}
 
 .text-primary {
   @apply text-slate-900;
@@ -46,6 +49,9 @@
 .color-quaternary {
   color: var(--color-quaternary);
 }
+.border-accent {
+  border-color: var(--color-accent);
+}
 .bg-accent {
   background-color: var(--color-accent);
 }
@@ -66,7 +72,7 @@
 }
 
 .nav-link {
-  @apply px-4 py-2 mx-2 cursor-pointer inline-block relative text-slate-500 hover:text-orange-500;
+  @apply px-1 py-2 mx-3 cursor-pointer inline-block relative text-slate-500 hover:text-orange-500;
 }
 .nav-link.active {
   @apply text-orange-500;
