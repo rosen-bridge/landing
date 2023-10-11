@@ -2,26 +2,34 @@
 import React, { useState, useEffect } from "react";
 import { Link as LinkScroll } from "react-scroll";
 
-const NavLink = ({to, offset=-60, children}) => {
-    return (
-        <li>
-            <LinkScroll
-                className="nav-link"
-                activeClass="active"
-                to={to}
-                spy={true}
-                smooth={true}
-                duration={1000}
-                offset={offset}
-            >
-                {children}
-            </LinkScroll>
-        </li>
-    )
-}
+const links = [
+    {
+        to: "guard-set",
+        label: "Guard set",
+    },{
+        to: "features",
+        label: "Features",
+    },{
+        to: "architecture",
+        label: "Architecture",
+    },{
+        to: "verifications",
+        label: "Verifications",
+    },{
+        to: "tokenomics",
+        label: "Tokenomics",
+    },{
+        to: "road-map",
+        label: "Road Map",
+    }
+]
 
 export default function Appbar() {
     const [scrollActive, setScrollActive] = useState(false);
+    const [showMenu, setShowMenu] = useState(false);
+
+    const toggleMenu = () => setShowMenu(prevState => !prevState)
+    const closeMenu = () => setShowMenu(false)
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
@@ -32,8 +40,9 @@ export default function Appbar() {
     return (
         <header
             className={
-                "fixed top-0 w-full z-30 transition-all " +
-                (scrollActive ? " shadow-md bg-glass backdrop-blur pt-0" : " pt-4")
+                "fixed top-0 w-full z-30 transition duration-300	 " +
+                ((scrollActive || showMenu) ? " shadow-md bg-glass backdrop-blur" : " ") +
+                (scrollActive ? " pt-0" : " pt-4")
             }
         >
             <nav className="block flex px-8 py-2">
@@ -41,13 +50,44 @@ export default function Appbar() {
                     <img src="./assets/logo/rosen-logo.svg" className="h-12 w-auto" alt=""/>
                     <img src="./assets/logo/rosen-typo-h.svg" className="h-4 w-auto" alt="ROSEN BRIDGE"/>
                 </div>
-                <ul className="hidden lg:flex grow justify-center items-center">
-                    <NavLink to="guard-set">Guard set</NavLink>
-                    <NavLink to="architecture">Architecture</NavLink>
-                    <NavLink to="tokenomics">Tokenomics</NavLink>
-                    <NavLink to="road-map">Road Map</NavLink>
+                <ul className="hidden xl:flex grow justify-end items-center">
+                    {links.map((item,index) => (
+                        <li key={index} >
+                            <LinkScroll
+                                className="nav-link"
+                                activeClass="active"
+                                to={item.to}
+                                offset={-60}
+                                onClick={closeMenu}
+                            >
+                                {item.label}
+                            </LinkScroll>
+                        </li>
+                    ))}
                 </ul>
+                <div className="flex xl:hidden grow justify-end items-center">
+                    <button onClick={toggleMenu} className="text-2xl border rounded px-2 py-1 text-secondary">
+                        <i className={`uil uil-${showMenu ? "multiply" : "bars"} `}/>
+                    </button>
+                </div>
             </nav>
+            <div className={`${showMenu ? "block" : "hidden"} `}>
+                <ul className="sm:flex mb-2">
+                    {links.map((item,index) => (
+                        <li key={index} >
+                                <LinkScroll
+                                className="nav-link"
+                                activeClass="active"
+                                to={item.to}
+                                offset={-60}
+                                onClick={closeMenu}
+                            >
+                                {item.label}
+                            </LinkScroll>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </header>
     );
 };
