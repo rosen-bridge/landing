@@ -8,54 +8,54 @@ export default function Verifications() {
             subtitle: "Observe the user’s transfer request and reports the event",
             description: "Each watcher observes the network individually. They CAN’T copy another watcher behaviour to prevent fault cascade",
             icons: [
-                <i className="uil uil-eye"/>,
-                <i className="uil uil-server-network -rotate-90"/>,
-                <i className="uil uil-search rotate-90"/>,
+                <i key="eye" className="uil uil-eye"/>,
+                <i key="server" className="uil uil-server-network -rotate-90"/>,
+                <i key="search" className="uil uil-search rotate-90"/>,
             ]
         },{
             title: "Watchers Report Aggregation",
             subtitle: "Report the event to guards after enough similar watcher reports",
             description: "The final report generates only if enough watchers report the same event. A faulty or malicious watcher can not generate a report by itself to prevent DOS attacks",
             icons: [
-                <i className="uil uil-file-search-alt"/>,
-                <i className="uil uil-eye -rotate-90"/>,
-                <i className="uil uil-message rotate-90"/>,
+                <i key="file-search" className="uil uil-file-search-alt"/>,
+                <i key="eye" className="uil uil-eye -rotate-90"/>,
+                <i key="message" className="uil uil-message rotate-90"/>,
             ]
         },{
             title: "Guard Verification",
             subtitle: "Verify the reported payment individually",
             description: "Each guard verifies the events before processing. They won’t rely on others verifying the events to prevent fault cascade",
             icons: [
-                <i className="uil uil-shield-question"/>,
-                <i className="uil uil-file-check-alt -rotate-90"/>,
-                <i className="uil uil-user rotate-90"/>,
+                <i key="question" className="uil uil-shield-question"/>,
+                <i key="file" className="uil uil-file-check-alt -rotate-90"/>,
+                <i key="user" className="uil uil-user rotate-90"/>,
             ]
         },{
             title: "Guards Consensus",
             subtitle: "Agree on a unique repayment transaction",
             description: "A guard creates a payment transaction, and all guards agree on the same transaction to prevent deadlock",
             icons: [
-                <i className="uil uil-invoice"/>,
-                <i className="uil uil-shield-check -rotate-90"/>,
-                <i className="uil uil-users-alt rotate-90"/>,
+                <i key="invoice" className="uil uil-invoice"/>,
+                <i key="shield" className="uil uil-shield-check -rotate-90"/>,
+                <i key="users" className="uil uil-users-alt rotate-90"/>,
             ]
         },{
             title: "Guards Multi-party Signature",
             subtitle: "Guards sign the agreed unique transaction together",
             description: "The payment transaction is valid only if all guards sign it. A malicious guard can not create an arbitrary transaction by itself",
             icons: [
-                <i className="uil uil-users-alt"/>,
-                <i className="uil uil-file-edit-alt -rotate-90"/>,
-                <i className="uil uil-shield rotate-90"/>,
+                <i key="users" className="uil uil-users-alt"/>,
+                <i key="file" className="uil uil-file-edit-alt -rotate-90"/>,
+                <i key="shield" className="uil uil-shield rotate-90"/>,
             ]
         },{
             title: "Guards Payment",
             subtitle: "Submit and audit the final signed payment tx and",
             description: "All events and payments are audited by all guards to prevent double-payment",
             icons: [
-                <i className="uil uil-transaction"/>,
-                <i className="uil uil-shield -rotate-90"/>,
-                <i className="uil uil-check-circle rotate-90"/>,
+                <i key="transaction" className="uil uil-transaction"/>,
+                <i key="shield" className="uil uil-shield -rotate-90"/>,
+                <i key="check" className="uil uil-check-circle rotate-90"/>,
             ]
         }
     ]

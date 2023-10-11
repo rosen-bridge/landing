@@ -29,7 +29,7 @@ export function Watchers() {
                     </h2>
                     <p className="mb-2">Anyone :)</p>
                     <p className="mb-2">You can actively contribute to the expansion and security audit of the bridge by becoming a watcher. Watchers receive rewards for their accurate reports. To get started, simply purchase Rosen Tokens (RSN) and provide collateral within the service to acquire reporting permits.</p>
-                    <p>It's important to note that Rosen takes measures to deter malicious behavior among watchers. Any watchers found engaging in malicious activities will face consequences, including the seizure of their permits.</p>
+                    <p>It&apos;s important to note that Rosen takes measures to deter malicious behavior among watchers. Any watchers found engaging in malicious activities will face consequences, including the seizure of their permits.</p>
                 </div>
             </div>
         </div>

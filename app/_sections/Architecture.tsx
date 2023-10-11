@@ -42,7 +42,7 @@ export default function Architecture() {
             </div>
             <DescriptionBox title="Guard set" img="rosen-architecture-guardset.png">
                 <Text>The Guard Set serves as a trusted entity responsible for executing the final transfer actions, dividing the bridge fee between engaged entities and deciding bridge administration settings. To process events, each guard independently verifies reports and subsequently reaches a consensus on a unique transaction for that event payment.</Text>
-                <Text>Each transaction requires the signatures of a quorum of guards. Thus, one or a few potentially malicious guards cannot generate arbitrary transactions to access the bridge's assets without proper authorization.</Text>
+                <Text>Each transaction requires the signatures of a quorum of guards. Thus, one or a few potentially malicious guards cannot generate arbitrary transactions to access the bridge&apos;s assets without proper authorization.</Text>
             </DescriptionBox>
             <DescriptionBox title="Watcher" img="rosen-architecture-watchers.png" right>
                 <Text>Watchers responsibility is monitoring the network and reporting bridge-related events. This process involves two steps: first a preliminary report with event digest, then submit a final report with details once multiple watchers confirm the same event. </Text>

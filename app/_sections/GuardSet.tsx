@@ -4,7 +4,7 @@ import Heading from "../../components/typography/Heading";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 
-const GuardCard = ({src, title}) => {
+const GuardCard = ({title}: {title: string}) => {
     return (
         <div>
             <div className="shadow-md p-8 bg-white border rounded-lg w-56">

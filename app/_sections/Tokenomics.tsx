@@ -51,7 +51,7 @@ export default function Tokenomics() {
                         </thead>
                         <tbody>
                         {Array(8).fill(0).map((row,index) => (
-                            <tr>
+                            <tr key={index}>
                                 <td>{"Auction House Staker Round"}</td>
                                 <td>{(75000000).toLocaleString()}</td>
                                 <td>{15}%</td>
