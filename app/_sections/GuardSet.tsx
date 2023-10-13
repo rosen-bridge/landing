@@ -7,8 +7,8 @@ import { Navigation } from 'swiper/modules';
 const GuardCard = ({title}: {title: string}) => {
     return (
         <div>
-            <div className="shadow-md p-8 bg-white border rounded-lg w-56">
-                <div className="rounded-full bg-slate-100 h-40 w-40 flex justify-center items-center text-white font-bold">
+            <div className="shadow-md p-8 bg-white border rounded-lg w-44">
+                <div className="rounded-full bg-slate-100 h-28 w-28 flex justify-center items-center text-white font-bold">
                     LOGO
                 </div>
             </div>
@@ -27,10 +27,7 @@ export default function GuardSet() {
     ]
     return (
         <Fragment>
-            <Heading
-                title="Guard set"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eleifend dui at efficitur accumsan. Donec laoreet iaculis metus. Duis pulvinar nisi ipsum, quis tristique lorem commodo non. Praesent hendrerit at metus eleifend commodo. Ut iaculis lobortis augue. Nunc tortor mi, volutpat vitae velit sed, fringilla condimentum nunc."
-            />
+            <Heading title="Guard set" />
             <div className="bg-primary py-8 mt-16">
                 <Swiper
                     spaceBetween={40}

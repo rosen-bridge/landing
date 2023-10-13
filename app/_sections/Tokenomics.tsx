@@ -45,8 +45,8 @@ export default function Tokenomics() {
                             <th>Price Per Token</th>
                             <th>TGE Issuance (%)</th>
                             <th>Emssion Frequency</th>
-                            <th>Cliff (months)</th>
-                            <th>Emission Length (MONTHS)</th>
+                            <th>Cliff <br/>(Months)</th>
+                            <th>Emission Length <br/>(Months)</th>
                         </tr>
                         </thead>
                         <tbody>

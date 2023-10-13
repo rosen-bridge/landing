@@ -4,7 +4,7 @@ import Heading from "../../components/typography/Heading";
 const DescriptionBox = ({title, img, right=false, children}: {title: string, img: string, right?: boolean, children: any}) => (
     <div className="block mb-8">
         <div className={`w-full md:w-1/2 lg:w-1/3 ${right ? 'float-left me-8' : 'float-right ms-8'} mb-4 p-4`}>
-            <img src={`/assets/architecture/${img}`} className="max-w-xs"/>
+            <img src={`/assets/architecture/${img}`} className="w-full max-w-xs"/>
         </div>
         <h3 className={`relative mb-4 ${!right ? "clear-left" : ""}`}>
             <span className="heading-2">{title}</span>
