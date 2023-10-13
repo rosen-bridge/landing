@@ -5,8 +5,8 @@ export default function Verifications() {
     const layers = [
         {
             title: "Watcher Observation & Report",
-            subtitle: "Observe the user’s transfer request and reports the event",
-            description: "Each watcher observes the network individually. They CAN’T copy another watcher behaviour to prevent fault cascade",
+            subtitle: "Individually observing transfer requests and reporting on Ergo",
+            description: "Each watcher observes the network individually. They cannot mimic another watcher behaviour to prevent fault cascade",
             icons: [
                 <i key="eye" className="uil uil-eye"/>,
                 <i key="server" className="uil uil-server-network -rotate-90"/>,
@@ -14,8 +14,8 @@ export default function Verifications() {
             ]
         },{
             title: "Watchers Report Aggregation",
-            subtitle: "Report the event to guards after enough similar watcher reports",
-            description: "The final report generates only if enough watchers report the same event. A faulty or malicious watcher can not generate a report by itself to prevent DOS attacks",
+            subtitle: "Creating a finalized report if enough distinct reports are available",
+            description: "The final report is generated if only if enough watchers have reported the same event. A small set of faulty or malicious watchers cannot generate a final report",
             icons: [
                 <i key="file-search" className="uil uil-file-search-alt"/>,
                 <i key="eye" className="uil uil-eye -rotate-90"/>,
@@ -23,7 +23,7 @@ export default function Verifications() {
             ]
         },{
             title: "Guard Verification",
-            subtitle: "Verify the reported payment individually",
+            subtitle: "Verifying the reported event individually",
             description: "Each guard verifies the events before processing. They won’t rely on others verifying the events to prevent fault cascade",
             icons: [
                 <i key="question" className="uil uil-shield-question"/>,
@@ -32,17 +32,17 @@ export default function Verifications() {
             ]
         },{
             title: "Guards Consensus",
-            subtitle: "Agree on a unique repayment transaction",
-            description: "A guard creates a payment transaction, and all guards agree on the same transaction to prevent deadlock",
+            subtitle: "Consensus on a unique payment transaction",
+            description: "A guard creates a payment transaction, and all guards should reach agreement on the exact transaction to prevent deadlocks",
             icons: [
                 <i key="invoice" className="uil uil-invoice"/>,
                 <i key="shield" className="uil uil-shield-check -rotate-90"/>,
                 <i key="users" className="uil uil-users-alt rotate-90"/>,
             ]
         },{
-            title: "Guards Multi-party Signature",
-            subtitle: "Guards sign the agreed unique transaction together",
-            description: "The payment transaction is valid only if all guards sign it. A malicious guard can not create an arbitrary transaction by itself",
+            title: "Guards Multiparty Signature",
+            subtitle: "Multiparty Signing the agreed upon transaction",
+            description: "Each transaction requires the signatures of a quorum of guards. Thus, one or a few potentially malicious guards cannot generate arbitrary transactions",
             icons: [
                 <i key="users" className="uil uil-users-alt"/>,
                 <i key="file" className="uil uil-file-edit-alt -rotate-90"/>,
@@ -50,7 +50,7 @@ export default function Verifications() {
             ]
         },{
             title: "Guards Payment",
-            subtitle: "Submit and audit the final signed payment tx and",
+            subtitle: "Submitting and auditing the final signed payment transaction",
             description: "All events and payments are audited by all guards to prevent double-payment",
             icons: [
                 <i key="transaction" className="uil uil-transaction"/>,

@@ -9,34 +9,44 @@ export default function Features() {
             icon: <i className="uil uil-layer-group"/>,
         },
         {
-            title: "Cryptographic Assurance",
-            description: "Relies on trustworthy multi-party signatures",
-            icon: <i className="uil uil-users-alt"/>,
+            title: "Ergo-Centric",
+            description: "Uses Ergo as a secure and cost efficient hub, reducing the need for several smart contracts on every chain. Facilitates linear growth complexity.",
+            icon: <i className="uil uil-sigma"/>,
         },
         {
-            title: "Offline Verification",
-            description: "Employs offline payment verification through trusted parties",
-            icon: <i className="uil uil-cloud-block"/>,
+            title: "Incentivised",
+            description: "Watchers and Guards are being rewarded in a Proof of Event scheme.",
+            icon: <i className="uil uil-gift"/>,
         },
         {
-            title: "Smart Contract Validation",
-            description: "Ensures the integrity through smart contract validation",
-            icon: <i className="uil uil-file-check"/>,
+            title: "Open Source",
+            description: "Safe and solid, with openly accessible source code for public review and inspection",
+            icon: <i className="uil uil-arrow"/>,
+        },
+        {
+            title: "Auditable Trace",
+            description: "Facilitates seamless auditing by tracking events on the Ergo blockchain",
+            icon: <i className="uil uil-file-search-alt"/>,
+        },
+        {
+            title: "Risk Minimized",
+            description: "Reducing hackers' incentives and gains utilizing cold storage",
+            icon: <i className="uil uil-keyhole-square"/>,
+        },
+        {
+            title: "Direct Verification",
+            description: " Relying on direct off-chain verification of events in the origin blockchain with no smart contract or proof dependency and in a recurring and independent manner.",
+            icon: <i className="uil uil-file-check-alt"/>,
         },
         {
             title: "Scalable",
-            description: "Easily accommodates new chains by integrating independent, chain-specific modules",
-            icon: <i className="uil uil-scaling-left"/>,
-        },
-        {
-            title: "Expandable",
-            description: "Adding new chains is straightforward, requiring minimal expertise, with the primary procedure centered around Ergo",
+            description: "Easily accommodates new chains by integrating independent, chain-specific modules.",
             icon: <i className="uil uil-expand-from-corner"/>,
         },
         {
-            title: "Auditable",
-            description: "Facilitates seamless auditing by tracking events on the Ergo blockchain",
-            icon: <i className="uil uil-file-search-alt"/>,
+            title: "Slow and Safe",
+            description: "Delayed verification and waiting for enough confirmations and consensus over events before taking actions.",
+            icon: <i className="uil uil-shield"/>,
         }
     ]
     return (
@@ -46,7 +56,7 @@ export default function Features() {
                 title="Why Rosen Bridge"
             />
             <div className="block mt-12">
-                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-8">
                     {features.map((item, index) => (
                         <div key={index} className="">
                             <div className="mx-auto w-12 h-12 rounded-full bg-secondary text-white flex justify-center items-center text-lg">

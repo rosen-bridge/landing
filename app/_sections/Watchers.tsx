@@ -27,9 +27,11 @@ export function Watchers() {
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold color-quaternary leading-relaxed mb-6">
                         Who are Watchers? How to be One?
                     </h2>
-                    <p className="mb-2">Anyone :)</p>
-                    <p className="mb-2">You can actively contribute to the expansion and security audit of the bridge by becoming a watcher. Watchers receive rewards for their accurate reports. To get started, simply purchase Rosen Tokens (RSN) and provide collateral within the service to acquire reporting permits.</p>
-                    <p>It&apos;s important to note that Rosen takes measures to deter malicious behavior among watchers. Any watchers found engaging in malicious activities will face consequences, including the seizure of their permits.</p>
+                    <p className="mb-2">Anyone. You can actively contribute to the expansion and security audit of the bridge by becoming a watcher. Watchers receive rewards for their accurate reports. </p>
+                    <p className="mb-2">Configure and run the watcher app for you desired network.</p>
+                    <p className="mb-2">Top it up with enough RSN and ERG.</p>
+                    <p className="mb-2">Put collateral and receive reporting permits.</p>
+                    <p>Enjoy reporting and getting rewards.</p>
                 </div>
             </div>
         </div>
