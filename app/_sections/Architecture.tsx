@@ -1,11 +1,10 @@
 import React, {Fragment} from "react";
 import Heading from "../../components/typography/Heading";
-import Image from "next/image";
 
 const DescriptionBox = ({title, img, right=false, children}: {title: string, img: string, right?: boolean, children: any}) => (
     <div className="block mb-8">
         <div className={`w-full md:w-1/2 lg:w-1/3 ${right ? 'float-left me-8' : 'float-right ms-8'} mb-4 p-4`}>
-            <Image alt={`architecture-${title}`} src={`/assets/architecture/${img}`} className="w-full max-w-xs"/>
+            <img alt={`Picture of ${title}`} src={`/assets/architecture/${img}`} className="w-full max-w-xs"/>
         </div>
         <h3 className={`relative mb-4 ${!right ? "clear-left" : ""}`}>
             <span className="heading-2">{title}</span>
@@ -40,7 +39,7 @@ export default function Architecture() {
             />
             <StickyBackground/>
             <div className="block lg:w-3/4">
-                <Image alt="rosen-architecture" src="./assets/architecture/rosen-architecture.png"/>
+                <img alt="Picture of Rosen architecture" src="./assets/architecture/rosen-architecture.png"/>
             </div>
             <DescriptionBox title="Guard set" img="rosen-architecture-guardset.png">
                 <Text>Guards are a federated group of entities managing the Rosen core. Their authority over Rosen is restricted through multisignature contracts and wallets. Failure or collusion of guards will be tolerated while the majority of guards are healthy. Each guard has a reasonable amount of funds locked as collateral and will lose all of them at once in case of malicious behaviour.</Text>
