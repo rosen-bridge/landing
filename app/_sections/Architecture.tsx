@@ -1,10 +1,11 @@
 import React, {Fragment} from "react";
 import Heading from "../../components/typography/Heading";
+import Image from "next/image";
 
 const DescriptionBox = ({title, img, right=false, children}: {title: string, img: string, right?: boolean, children: any}) => (
     <div className="block mb-8">
         <div className={`w-full md:w-1/2 lg:w-1/3 ${right ? 'float-left me-8' : 'float-right ms-8'} mb-4 p-4`}>
-            <img src={`/assets/architecture/${img}`} className="w-full max-w-xs"/>
+            <Image alt={`architecture-${title}`} src={`/assets/architecture/${img}`} className="w-full max-w-xs"/>
         </div>
         <h3 className={`relative mb-4 ${!right ? "clear-left" : ""}`}>
             <span className="heading-2">{title}</span>
@@ -39,7 +40,7 @@ export default function Architecture() {
             />
             <StickyBackground/>
             <div className="block lg:w-3/4">
-                <img alt="Rosen architecture" src="./assets/architecture/rosen-architecture.png"/>
+                <Image alt="rosen-architecture" src="./assets/architecture/rosen-architecture.png"/>
             </div>
             <DescriptionBox title="Guard set" img="rosen-architecture-guardset.png">
                 <Text>Guards are a federated group of entities managing the Rosen core. Their authority over Rosen is restricted through multisignature contracts and wallets. Failure or collusion of guards will be tolerated while the majority of guards are healthy. Each guard has a reasonable amount of funds locked as collateral and will lose all of them at once in case of malicious behaviour.</Text>
@@ -62,7 +63,7 @@ export default function Architecture() {
                 <Text>Rosen Fund is multisig fund controlled by the guard set (other entities might be added). Rosen’s active and passive revenues like bridge fees, listing fees, portions of token sale revenues, and other futuristic incomes will be collected to this fund. Using this fund, Rosen can engage in providing liquidity and market making in several chains. </Text>
             </DescriptionBox>
             <DescriptionBox title="Cold storage" img="rosen-architecture-cold.png" right>
-                <Text>Bridges are appealing targets for hackers due to the substantial funds they accumulate. Rosen employs multi-signature cold wallets, reducing hackers' incentives. In the event of a bug or hack, only a fraction of the funds will be at risk.</Text>
+                <Text>Bridges are appealing targets for hackers due to the substantial funds they accumulate. Rosen employs multi-signature cold wallets, reducing hackers&apos; incentives. In the event of a bug or hack, only a fraction of the funds will be at risk.</Text>
             </DescriptionBox>
             <div className="clear-both"/>
         </Fragment>
