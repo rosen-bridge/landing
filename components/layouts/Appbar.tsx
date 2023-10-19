@@ -13,8 +13,8 @@ const links = [
         to: "architecture",
         label: "Architecture",
     },{
-        to: "verifications",
-        label: "Verifications",
+        to: "watchers",
+        label: "Watchers",
     },{
         to: "tokenomics",
         label: "Tokenomics",

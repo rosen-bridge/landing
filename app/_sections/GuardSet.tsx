@@ -31,11 +31,12 @@ export default function GuardSet() {
             <div className="bg-primary py-8 mt-16">
                 <Swiper
                     spaceBetween={40}
-                    slidesOffsetBefore={96}
-                    slidesOffsetAfter={96}
+                    slidesOffsetBefore={32}
+                    slidesOffsetAfter={32}
                     slidesPerView={'auto'}
                     autoplay
                     className="mt-negative"
+                    wrapperClass="swiper-wrapper lg:justify-center"
                     navigation
                     modules={[Navigation]}
                 >
