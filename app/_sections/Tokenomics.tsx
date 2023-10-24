@@ -11,6 +11,44 @@ const FeatureCard = ({label, value}: {label: string, value: string}) => {
 }
 
 export default function Tokenomics() {
+    const data = [
+        {
+            allocation: "Initial Liquidity Bootstrapping (Ergo and Cardano)",
+            count: 1e8,
+            percent: 10,
+            distribution: "Liquidity pool and ISPO"
+        },{
+            allocation: "Future Liquidity Bootstrapping (new chains)",
+            count: 3.85e8,
+            percent: 38.5,
+            distribution: "Liquidity on new chains"
+        },{
+            allocation: "Event-Based Emission (Rewards)",
+            count: 2.5e8,
+            percent: 25,
+            distribution: "Event-based"
+        },{
+            allocation: "Passive Staking",
+            count: 2.5e7,
+            percent: 2.5,
+            distribution: "Staking rewards"
+        },{
+            allocation: "Team Budget",
+            count: 1.05e8,
+            percent: 10.5,
+            distribution: "48-Months vested"
+        },{
+            allocation: "Treasury",
+            count: 1.05e8,
+            percent: 10.5,
+            distribution: "48-Months vested"
+        },{
+            allocation: "Ergo Foundation",
+            count: 3e7,
+            percent: 3,
+            distribution: "48-Months vested"
+        },
+    ]
     return (
         <Fragment>
             <Heading
@@ -26,40 +64,32 @@ export default function Tokenomics() {
                         </p>
                     </div>
                     <div className="grid grid-cols-2">
-                        <FeatureCard label="Token Name" value="Auction House Token"/>
-                        <FeatureCard label="Token Ticker" value="AHT"/>
-                        <FeatureCard label="Total Distribution" value={(375000000).toLocaleString()}/>
-                        <FeatureCard label="Reserved for Utility" value={(125000000).toLocaleString()}/>
+                        <FeatureCard label="Token Name" value="Rosen Bridge Token"/>
+                        <FeatureCard label="Token Ticker" value="RSN"/>
+                        <FeatureCard label="Max Supply" value={(18).toLocaleString()}/>
+                        <FeatureCard label="Initial Liquidity Bootstrapping" value={(1e8).toLocaleString()}/>
                     </div>
                 </div>
             </div>
             <div className="w-full bg-primary h-20 mt-8"/>
             <div className="container mx-auto px-0 md:px-8 lg:px-24">
-                <div className="w-full -mt-20 overflow-x-auto">
+                <div className="w-full -mt-14 overflow-x-auto">
                     <table className="w-full table">
                         <thead>
                         <tr>
                             <th>Token Allocation</th>
                             <th>Number of Tokens</th>
                             <th>% of Total Supply</th>
-                            <th>Price Per Token</th>
-                            <th>TGE Issuance (%)</th>
-                            <th>Emssion Frequency</th>
-                            <th>Cliff <br/>(Months)</th>
-                            <th>Emission Length <br/>(Months)</th>
+                            <th>Distribution Method</th>
                         </tr>
                         </thead>
                         <tbody>
-                        {Array(8).fill(0).map((row,index) => (
+                        {data.map((row,index) => (
                             <tr key={index}>
-                                <td>{"Auction House Staker Round"}</td>
-                                <td>{(75000000).toLocaleString()}</td>
-                                <td>{15}%</td>
-                                <td>{0.0015}</td>
-                                <td>{0}%</td>
-                                <td>{"Daily"}</td>
-                                <td>{1}</td>
-                                <td>{10}</td>
+                                <td>{row.allocation}</td>
+                                <td>{row.count.toLocaleString()}</td>
+                                <td>{row.percent}%</td>
+                                <td>{row.distribution}</td>
                             </tr>
                         ))}
                         </tbody>

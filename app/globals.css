@@ -90,7 +90,7 @@ html{
 }
 
 .table thead th {
-  @apply color-quaternary text-left text-sm font-thin
+  @apply color-quaternary text-left text-sm font-thin whitespace-nowrap
 }
 .table tr:nth-child(even) {
   @apply bg-slate-100
