@@ -4,12 +4,16 @@ import Heading from "../../components/typography/Heading";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 
-const GuardCard = ({title}: {title: string}) => {
+const GuardCard = ({title, image}: {title: string, image?: string}) => {
     return (
         <div>
             <div className="shadow-md p-8 bg-white border rounded-lg w-44">
                 <div className="rounded-full bg-slate-100 h-28 w-28 flex justify-center items-center text-white font-bold">
-                    LOGO
+                    {image ? (
+                        <img src={`assets/guardset/${image}`} alt={`Logo of ${title}`}/>
+                    ):(
+                        <i className="uil uil-shield-question text-5xl"/>
+                    )}
                 </div>
             </div>
             <p className="text-center text-white mt-2">{title}</p>
@@ -19,12 +23,17 @@ const GuardCard = ({title}: {title: string}) => {
 
 export default function GuardSet() {
     const guardsList = [
-        {title: "First Guard"},
-        {title: "Second Guard"},
-        {title: "Third Guard"},
-        {title: "4th Guard"},
-        {title: "5th Guard"},
-    ]
+        {title: "Nautilus and Machina Finance", image: "nautilus-and-machina.png"},
+        {title: "Spectrum", image: "spectrum.png"},
+        {title: "ErgoPad", image: "ergopad.svg"},
+        {title: "Lilium", image: "lilium.svg"},
+        {title: "Minotaur and ErgoRaffle", image: "minotaur-and-raffle.png"},
+        {title: ""},
+        {title: "Zengate", image: "zengate.svg"},
+        {title: "Sigmanauts", image: "sigmanauts.jpeg"},
+        {title: "Rosen Core 1", image: "rosen.svg"},
+        {title: "Rosen Core 2", image: "rosen.svg"},
+  ]
     return (
         <Fragment>
             <Heading title="Guard set" />
@@ -36,7 +45,7 @@ export default function GuardSet() {
                     slidesPerView={'auto'}
                     autoplay
                     className="mt-negative"
-                    wrapperClass="swiper-wrapper lg:justify-center"
+                    // wrapperClass="swiper-wrapper lg:justify-center"
                     navigation
                     modules={[Navigation]}
                 >
