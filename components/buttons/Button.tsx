@@ -1,9 +1,10 @@
 import React from "react";
 
-export default function Button({children}: {children: React.ReactNode}) {
+export default function Button({children, disabled=false}: {children: React.ReactNode, disabled?: boolean}) {
     return (
         <button
-            className="px-8 py-2 bg-accent text-slate-100 hover:text-white uppercase rounded-full shadow-lg hover:shadow-xl"
+            className="button-accent"
+            disabled={disabled}
         >
             {children}
         </button>

@@ -36,9 +36,9 @@ export default function Home() {
             <section id="road-map">
                 <RoadMap/>
             </section>
-            <section>
+            {/* <section>
                 <GetStarted/>
-            </section>
+            </section> */}
         </main>
     )
 }

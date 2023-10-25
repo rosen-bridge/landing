@@ -59,14 +59,20 @@ export default function Tokenomics() {
             <div className="block">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-16">
                     <div>
+                        <p className="text-secondary text-base mb-2">
+                            Rosen Bridge is designed to bootstrap liquidity across multiple ecosystems. 
+                        </p>
+                        <p className="text-secondary text-base mb-2">
+                            The Rosen Token serves the as a sybil resistance mechanism for the Rosen framework, a fee distribution mechanism, and means to access services of the Rosen Bridge.
+                        </p>
                         <p className="text-secondary text-base">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Any user can join as a Watcher given the meet the collateral requirements needed to participate, and earn rewards for their services. 
                         </p>
                     </div>
                     <div className="grid grid-cols-2">
                         <FeatureCard label="Token Name" value="Rosen Bridge Token"/>
                         <FeatureCard label="Token Ticker" value="RSN"/>
-                        <FeatureCard label="Max Supply" value={(18).toLocaleString()}/>
+                        <FeatureCard label="Max Supply" value={(1e9).toLocaleString()}/>
                         <FeatureCard label="Initial Liquidity Bootstrapping" value={(1e8).toLocaleString()}/>
                     </div>
                 </div>

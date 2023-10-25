@@ -73,16 +73,6 @@ export default function RoadMap() {
                     right: true,
                     items: [
                         {
-                            description: "Bitcoin bridge",
-                        },{
-                            description: "Dogecoin bridge",
-                        },{
-                            description: "More non-EVM bridges",
-                        }
-                    ]
-                },{
-                    items: [
-                        {
                             description: "Expanding the guard set",
                         },{
                             description: "Cold wallets activation",
@@ -92,6 +82,16 @@ export default function RoadMap() {
                         },{
                             description: "Additional data sources support for integrated chains",
                             inProgress: true,
+                        }
+                    ]
+                },{
+                    items: [
+                        {
+                            description: "Bitcoin bridge",
+                        },{
+                            description: "Dogecoin bridge",
+                        },{
+                            description: "More non-EVM bridges",
                         }
                     ]
                 },{

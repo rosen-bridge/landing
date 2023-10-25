@@ -115,6 +115,20 @@ html{
   @apply bg-secondary
 }
 
+.button-accent {
+  @apply px-8 py-2 bg-accent text-slate-100  uppercase rounded-full shadow-lg 
+}
+.button-accent:disabled {
+  @apply bg-slate-400
+}
+.button-accent:hover:not(:disabled) {
+  @apply text-white shadow-xl
+}
+
+.social-link {
+  @apply text-base text-secondary-dark hover:text-white
+}
+
 .card-pattern {
   border-top: 8px solid #587c8b;
 }
