@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-accent: #dd704f;
+  --color-primary: #53405e;
+  --color-secondary: #90314f;
+  --color-tertiary: #5b8090;
+  --color-quaternary: #f6d0a1;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --swiper-navigation-color: var(--color-quaternary);
+}
+
+/*@media (prefers-color-scheme: dark) {*/
+/*  :root {*/
+/*    --foreground-rgb: 255, 255, 255;*/
+/*    --background-start-rgb: 0, 0, 0;*/
+/*    --background-end-rgb: 0, 0, 0;*/
+/*  }*/
+/*}*/
+html{
+  scroll-behavior:smooth
+}
+
+.text-primary {
+  @apply text-slate-900;
+}
+.text-secondary {
+  @apply text-slate-500;
+}
+.text-secondary-dark {
+  @apply text-slate-300;
+}
+.color-accent {
+  color: var(--color-accent);
+}
+.color-primary {
+  color: var(--color-primary);
+}
+.color-secondary {
+  color: var(--color-secondary);
+}
+.color-tertiary {
+  color: var(--color-tertiary);
+}
+.color-quaternary {
+  color: var(--color-quaternary);
+}
+.border-accent {
+  border-color: var(--color-accent);
+}
+.bg-accent {
+  background-color: var(--color-accent);
+}
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+.bg-tertiary {
+  background-color: var(--color-tertiary);
+}
+.bg-quaternary {
+  background-color: var(--color-quaternary);
+}
+.bg-glass {
+  background-color: rgba(255,255,255,0.6);
+}
+
+.nav-link {
+  @apply px-1 py-2 mx-3 cursor-pointer inline-block relative text-slate-500 hover:text-orange-500;
+}
+.nav-link.active {
+  @apply text-orange-500;
+}
+
+.mt-negative {
+  margin-top: -4rem;
+}
+
+.hot {
+  fill: var(--color-accent);
+}
+.cold {
+  fill: var(--color-tertiary);
+}
+
+.table thead th {
+  @apply color-quaternary text-left text-sm font-thin whitespace-nowrap
+}
+.table tr:nth-child(even) {
+  @apply bg-slate-100
+}
+.table :is(td,th) {
+  @apply py-4 px-4 text-primary
+}
+.table :is(td,th):first-of-type {
+  @apply rounded-tl-lg rounded-bl-lg
+}
+.table :is(td,th):last-of-type {
+  @apply rounded-tr-lg rounded-br-lg
+}
+
+.block {
+  @apply container mx-auto px-8 lg:px-24
+}
+.heading-2 {
+  @apply text-xl lg:text-2xl font-bold color-secondary relative  after:content-[''] after:absolute after:w-16 after:h-1 after:-bottom-1 after:left-0
+}
+.heading-2:after {
+  @apply bg-secondary
+}
+
+.button-accent {
+  @apply px-8 py-2 bg-accent text-slate-100  uppercase rounded-full shadow-lg 
+}
+.button-accent:disabled {
+  @apply bg-slate-400
+}
+.button-accent:hover:not(:disabled) {
+  @apply text-white shadow-xl
+}
+
+.social-link {
+  @apply text-base text-secondary-dark hover:text-white
+}
+
+.card-pattern {
+  border-top: 8px solid #587c8b;
+}
+.card-pattern .description {
+  opacity: 0;
+  background-color: #415c68;
+  background: linear-gradient(180deg, #587c8b 0, #415c68 30%);
+  transition: 300ms;
+}
+.card-pattern:hover .description {
+  opacity: 1;
+}
+
+.cube {
+  width: 70px;
+  height: 80px;
+  overflow: hidden;
+  
+}
+.face {
+  transform-origin: 0 0;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.front {
+  background: #587c8b;
+  -ms-transform: rotate(-30deg) skewX(-30deg) translate(130px, 172px) scaleY(0.864);
+  -webkit-transform: rotate(-30deg) skewX(-30deg) translate(130px, 172px) scaleY(0.864);
+  transform: rotate(-30deg) skewX(-30deg) translate(130px, 172px) scaleY(0.864) ;
+}
+.top {
+  background: #5b8090;
+  -ms-transform: rotate(210deg) skew(-30deg) translate(-200px, -60px) scaleY(0.864);
+  -webkit-transform: rotate(210deg) skew(-30deg) translate(-200px, -60px) scaleY(0.864);
+  transform:  rotate(210deg) skew(-30deg) translate(-200px, -60px) scaleY(0.864) ;
+}
+.side {
+  background: #45626e;
+  -ms-transform: rotate(90deg) skewX(-30deg) scaleY(0.864) translate(68px, -131px);
+  -webkit-transform: rotate(90deg) skewX(-30deg) scaleY(0.864) translate(68px, -131px);
+  transform: rotate(90deg) skewX(-30deg) scaleY(0.864) translate(68px, -131px);
+}
