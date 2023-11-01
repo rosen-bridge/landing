@@ -18,7 +18,7 @@ export default function Tokenomics() {
             percent: 10,
             distribution: "Liquidity pool and ISPO"
         },{
-            allocation: "Future Liquidity Bootstrapping (new chains)",
+            allocation: "Future Liquidity Bootstrapping (New Chains)",
             count: 3.85e8,
             percent: 38.5,
             distribution: "Liquidity on new chains"
@@ -66,7 +66,7 @@ export default function Tokenomics() {
                             The Rosen Token serves the as a sybil resistance mechanism for the Rosen framework, a fee distribution mechanism, and means to access services of the Rosen Bridge.
                         </p>
                         <p className="text-secondary text-base">
-                            Any user can join as a Watcher given the meet the collateral requirements needed to participate, and earn rewards for their services. 
+                            Any user can join as a Watcher given they meet the collateral requirements needed to participate, and earn rewards for their services. 
                         </p>
                     </div>
                     <div className="grid grid-cols-2">

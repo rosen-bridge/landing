@@ -25,12 +25,16 @@ export function Watchers() {
                 </div>
                 <div className="py-12 px-0 md:px-12 text-white flex flex-col justify-center">
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold color-quaternary leading-relaxed mb-6">
-                        Who are Watchers? How to be One?
+                        Who can become a Watcher?
                     </h2>
-                    <p className="mb-2">Anyone. You can actively contribute to the expansion and security audit of the bridge by becoming a watcher. Watchers receive rewards for their accurate reports. </p>
-                    <p className="mb-2">Configure and run the watcher app for you desired network.</p>
-                    <p className="mb-2">Top it up with enough RSN and ERG.</p>
-                    <p className="mb-2">Put collateral and receive reporting permits.</p>
+                    <p className="mb-2">Anyone. You can actively contribute to the expansion and security audit of the Rosen Bridge by becoming a Watcher. Watchers receive rewards for accurate reporting. </p>
+                    <p className="mb-2"></p>
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold color-quaternary leading-relaxed mb-6">
+                        How can I become a Watcher?
+                    </h2>
+                    <p className="mb-2">Configure and run the Watcher app for your desired network (In progress, so stay tuned!).</p>
+                    <p className="mb-2">Top it off with enough RSN and ERG.</p>
+                    <p className="mb-2">Put in collateral and receive reporting permits.</p>
                     <p>Enjoy reporting and getting rewards.</p>
                 </div>
             </div>
