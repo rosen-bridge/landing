@@ -5,7 +5,7 @@ import { Link as LinkScroll } from "react-scroll";
 const links = [
     {
         to: "guard-set",
-        label: "Guard set",
+        label: "Guard Set",
     },{
         to: "features",
         label: "Features",

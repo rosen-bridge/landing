@@ -5,8 +5,8 @@ export default function Verifications() {
     const layers = [
         {
             title: "Watcher Observation & Report",
-            subtitle: "Individually observing transfer requests and reporting on Ergo",
-            description: "Each watcher observes the network individually. They cannot mimic another watcher behaviour to prevent fault cascade",
+            subtitle: "Individually observing transfer requests and reporting using Ergo.",
+            description: "Each Watcher observes the network individually. They cannot mimic another Watcher's behaviour, which prevents fault cascade.",
             icons: [
                 <i key="eye" className="uil uil-eye"/>,
                 <i key="server" className="uil uil-server-network -rotate-90"/>,
@@ -14,8 +14,8 @@ export default function Verifications() {
             ]
         },{
             title: "Watchers Report Aggregation",
-            subtitle: "Creating a finalized report if enough distinct reports are available",
-            description: "The final report is generated if only if enough watchers have reported the same event. A small set of faulty or malicious watchers cannot generate a final report",
+            subtitle: "Creating a finalized report if enough distinct reports are available.",
+            description: "The final report is generated if and only if enough Watchers have reported the same event. A small set of faulty or malicious Watchers cannot generate a final report.",
             icons: [
                 <i key="file-search" className="uil uil-file-search-alt"/>,
                 <i key="eye" className="uil uil-eye -rotate-90"/>,
@@ -23,8 +23,8 @@ export default function Verifications() {
             ]
         },{
             title: "Guard Verification",
-            subtitle: "Verifying the reported event individually",
-            description: "Each guard verifies the events before processing. They won’t rely on others verifying the events to prevent fault cascade",
+            subtitle: "Verifying the reported event individually.",
+            description: "Each Guard verifies the events before processing. Similar to Watchers, Guards won’t rely on other Guards verifying the same events in order to prevent fault cascade.",
             icons: [
                 <i key="question" className="uil uil-shield-question"/>,
                 <i key="file" className="uil uil-file-check-alt -rotate-90"/>,
@@ -32,17 +32,17 @@ export default function Verifications() {
             ]
         },{
             title: "Guards Consensus",
-            subtitle: "Consensus on a unique payment transaction",
-            description: "A guard creates a payment transaction, and all guards should reach agreement on the exact transaction to prevent deadlocks",
+            subtitle: "Consensus on a unique payment transaction.",
+            description: "After a Guard creates a payment transaction, all Guards should reach agreement on the exact transaction to prevent deadlocks.",
             icons: [
                 <i key="invoice" className="uil uil-invoice"/>,
                 <i key="shield" className="uil uil-shield-check -rotate-90"/>,
                 <i key="users" className="uil uil-users-alt rotate-90"/>,
             ]
         },{
-            title: "Guards Multiparty Signature",
-            subtitle: "Multiparty Signing the agreed upon transaction",
-            description: "Each transaction requires the signatures of a quorum of guards. Thus, one or a few potentially malicious guards cannot generate arbitrary transactions",
+            title: "Guard Multiparty Signature",
+            subtitle: "Multiparty signing the agreed upon transaction.",
+            description: "Each transaction requires the signatures of a quorum of Guards. Thus, one or a few potentially malicious Guards cannot generate arbitrary transactions.",
             icons: [
                 <i key="users" className="uil uil-users-alt"/>,
                 <i key="file" className="uil uil-file-edit-alt -rotate-90"/>,
@@ -50,8 +50,8 @@ export default function Verifications() {
             ]
         },{
             title: "Guards Payment",
-            subtitle: "Submitting and auditing the final signed payment transaction",
-            description: "All events and payments are audited by all guards to prevent double-payment",
+            subtitle: "Submitting and auditing the final signed payment transaction.",
+            description: "All events and payments are audited by all Guards to prevent double-payment.",
             icons: [
                 <i key="transaction" className="uil uil-transaction"/>,
                 <i key="shield" className="uil uil-shield -rotate-90"/>,

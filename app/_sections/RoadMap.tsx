@@ -73,7 +73,7 @@ export default function RoadMap() {
                     right: true,
                     items: [
                         {
-                            description: "Expanding the guard set",
+                            description: "Expanding the Guard Set",
                         },{
                             description: "Cold wallets activation",
                             inProgress: true,
