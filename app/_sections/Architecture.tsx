@@ -45,8 +45,7 @@ export default function Architecture() {
                 <Text>Guards are a federated group of entities managing the Rosen core. Their authority over Rosen is restricted through multisignature contracts and wallets. Failure or collusion of Guards will be tolerated while the majority of Guards are healthy. Each Guard has a reasonable amount of funds locked as collateral and will lose all their funds at once in case of malicious behaviour.</Text>
             </DescriptionBox>
             <DescriptionBox title="Watcher" img="rosen-architecture-watchers.png" right>
-                <Text>Watchers are entities tasked with monitoring a given blockchain (e.g., Cardano, Bitcoin, Ethereum, etc.) and reporting bridge-related events on Ergo. Each blockchain has its own dedicated set of Watchers working together as a cross-chain oracle for Rosen. Watchers will be rewarded for settled transfers but may face penalties for fraud. Anyone can participate as a Watcher once
-                     allocating enough RSN and native currency of the bridged chain (e.g., 1000 ERG and 1000 RSN).</Text>
+                <Text>Watchers are entities tasked with monitoring a given blockchain (e.g., Cardano, Bitcoin, Ethereum, etc.) and reporting bridge-related events on Ergo. Each blockchain has its own dedicated set of Watchers working together as a cross-chain oracle for Rosen. Watchers will be rewarded for settled transfers but may face penalties for fraud. Anyone can participate as a Watcher once allocating enough RSN and ERG.</Text>
                 <Text>
                     Review  
                     <a href="#watchers" className="color-accent hover:border-b-4 border-accent mx-1">this article</a> 

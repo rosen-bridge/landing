@@ -10,7 +10,7 @@ export default function Features() {
         },
         {
             title: "Smart Contract Reduction",
-            description: "Uses Ergo as a secure and cost efficient hub, reducing the need for several smart contracts on every bridged chain. Facilitates linear growth complexity.",
+            description: "Uses Ergo as a secure and cost efficient hub, minimizing smart contracts on bridged chains and ensuring scalable growth.",
             icon: <i className="uil uil-sigma"/>,
         },
         {
