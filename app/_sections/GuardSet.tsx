@@ -45,7 +45,7 @@ export default function GuardSet() {
   ]
     return (
         <Fragment>
-            <Heading title="Guard set" />
+            <Heading title="Guard Set" />
             <div className="bg-primary py-8 mt-16">
                 <Swiper
                     spaceBetween={40}
