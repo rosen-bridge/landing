@@ -6,6 +6,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Appbar from "../components/layouts/Appbar";
 import Footer from "../components/layouts/Footer";
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,22 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
                 {children}
                 <Footer/>
             </body>
+            {
+                process.env.NEXT_PUBLIC_GA_ID && (
+                    <>
+                        <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`} />
+                        <Script id="google-analytics">
+                            {`
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+
+                            gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+                            `}
+                        </Script>
+                    </>
+                )
+            }
         </html>
     )
 }
