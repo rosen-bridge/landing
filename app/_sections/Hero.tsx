@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../../components/buttons/Button";
 import StatItem from "../../components/typography/StatItem";
+import Link from "next/link";
 
 export default function Hero() {
     return (
@@ -24,7 +25,9 @@ export default function Hero() {
                         - Ongoing Monitoring<br/>
                         - Transparent Reporting
                     </p>
-                    <Button disabled>Launch App (Soon)</Button>
+                    <Link href="https://app.rosen.tech" target="_blank">
+                        <Button>Launch App</Button>
+                    </Link>
                     {/* <div className="mt-16 flex gap-16">
                         <StatItem label="lorem ipsum" value={1.5e7}/>
                         <StatItem label="dolor sit" value={100}/>
