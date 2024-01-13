@@ -2,29 +2,18 @@
 import React, {Fragment} from "react";
 import Heading from "../../components/typography/Heading";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 
 const GuardCard = ({title, image, className=""}: {title: string, image?: string, className?: string}) => {
     return (
-        <div>
-            <div className={"w-44 h-44 shadow-md p-8 bg-white border rounded-lg flex justify-center items-center "+className}>
-                {/* <div className="rounded-full h-28 w-28 font-bold"> */}
-                    {image ? (
-                        <img src={`assets/guardset/${image}`} alt={`Logo of ${title}`}/>
-                    ):(
-                        <i className="uil uil-shield-question text-slate-100 text-6xl"/>
-                    )}
-                {/* </div> */}
+        <div className="w-44 mx-auto mb-8">
+            <div className={"h-44 shadow-md p-8 bg-white border rounded-lg flex justify-center items-center "+className}>
+                {image ? (
+                    <img src={`assets/guardset/${image}`} alt={`Logo of ${title}`}/>
+                ):(
+                    <i className="uil uil-shield-question text-slate-100 text-6xl"/>
+                )}
             </div>
-            {/* <div className="shadow-md p-8 bg-white border rounded-lg w-44">
-                <div className="rounded-full text-slate-100 h-28 w-28 flex justify-center items-center font-bold">
-                    {image ? (
-                        <img src={`assets/guardset/${image}`} alt={`Logo of ${title}`}/>
-                    ):(
-                        <i className="uil uil-shield-question text-5xl"/>
-                    )}
-                </div>
-            </div> */}
             <p className="text-center text-white mt-2">{title}</p>
         </div>
     )
@@ -46,24 +35,45 @@ export default function GuardSet() {
     return (
         <Fragment>
             <Heading title="Guard Set" />
-            <div className="bg-primary py-8 mt-16">
-                <Swiper
-                    spaceBetween={40}
-                    slidesOffsetBefore={32}
-                    slidesOffsetAfter={32}
-                    slidesPerView={'auto'}
-                    autoplay
-                    className="mt-negative"
-                    // wrapperClass="swiper-wrapper lg:justify-center"
-                    navigation
-                    modules={[Navigation]}
-                >
-                    {guardsList. map((item, index) => (
-                        <SwiperSlide className="w-fit" key={index}>
-                            <GuardCard {...item}/>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
+            <div className="bg-primary pt-8 pb-4 mt-16">
+                <div className="block mt-negative">
+                    <Swiper
+                        slidesOffsetBefore={2}
+                        slidesOffsetAfter={2}
+                        slidesPerView={1}
+                        breakpoints={{
+                            640: {
+                              slidesPerView: 2,
+                            },
+                            768: {
+                              slidesPerView: 3,
+                            },
+                            1024: {
+                              slidesPerView: 4,
+                            },
+                            1280: {
+                              slidesPerView: 5,
+                            },
+                            1536: {
+                              slidesPerView: 6,
+                            }
+                          }}
+                        autoplay={{
+                            delay: 2500,
+                        }}
+                        loop
+                        pagination={{
+                            clickable: true,
+                        }}
+                        modules={[Pagination, Autoplay]}
+                    >
+                        {guardsList. map((item, index) => (
+                            <SwiperSlide key={index}>
+                                <GuardCard {...item}/>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
             </div>
         </Fragment>
     )
