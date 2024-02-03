@@ -26,7 +26,7 @@ export default function GuardSet() {
         {title: "ErgoPad", image: "ergopad.svg"},
         {title: "Lilium", image: "lilium.svg"},
         {title: "Minotaur and ErgoRaffle", image: "minotaur-and-raffle.png", className: "p-2"},
-        {title: ""},
+        {title: "Duckpools", image: "duckpools.svg"},
         {title: "Zengate", image: "zengate.svg"},
         {title: "Sigmanauts", image: "sigmanauts.jpeg"},
         {title: "Rosen Core 1", image: "rosen.svg"},
