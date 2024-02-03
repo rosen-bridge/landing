@@ -140,7 +140,7 @@ export default function RoadMap() {
                         <div className="pb-8 border-s-2 border-dashed">
                             <div className="h-1"/>
                             {section.quarters.map((quarter,qIndex) => (
-                                <MapCard right number={qIndex+1} key={qIndex}>
+                                <MapCard number={qIndex+1} key={qIndex}>
                                     {quarter.items.map((item,iIndex) => (
                                         <MapItem key={iIndex} {...item}/>
                                     ))}
@@ -158,7 +158,7 @@ export default function RoadMap() {
                         </div>
                         <div className="col-span-1 pb-8 border-e-2 lg:border-e-4 border-dashed">
                             {section.quarters.filter(i => !i.right).map((quarter,qIndex) => (
-                                <MapCard number={2*qIndex+1} key={qIndex}>
+                                <MapCard right number={2*qIndex+1} key={qIndex}>
                                     {quarter.items.map((item,iIndex) => (
                                         <MapItem key={iIndex} {...item}/>
                                     ))}
