@@ -63,6 +63,7 @@ export default function RoadMap() {
                             inProgress: false,
                         },{
                             description: "Ethereum bridge",
+                            inProgress: true,
                         },{
                             description: "Binance Smart Chain bridge",
                         },{
@@ -87,7 +88,11 @@ export default function RoadMap() {
                 },{
                     items: [
                         {
+                            description: "Cardano bridge",
+                            completed: true,
+                        },{
                             description: "Bitcoin bridge",
+                            inProgress: true,
                         },{
                             description: "Dogecoin bridge",
                         },{
