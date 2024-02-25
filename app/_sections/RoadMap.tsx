@@ -88,6 +88,9 @@ export default function RoadMap() {
                 },{
                     items: [
                         {
+                            description: "Ergo bridge",
+                            completed: true,
+                        },{
                             description: "Cardano bridge",
                             completed: true,
                         },{
