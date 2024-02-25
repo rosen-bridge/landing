@@ -93,7 +93,7 @@ export default function RoadMap() {
                         },{
                             description: "Cardano bridge",
                             completed: true,
-                        },
+                        },{
                             description: "Bitcoin bridge",
                             inProgress: true,
                         },{
