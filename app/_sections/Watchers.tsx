@@ -32,7 +32,7 @@ export function Watchers() {
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold color-quaternary leading-relaxed mb-6">
                         How can I become a Watcher?
                     </h2>
-                    <p className="mb-2">Configure and run the Watcher app for your desired network (In progress, so stay tuned!).</p>
+                    <p className="mb-2">Configure and run the Watcher app for your desired network.</p>
                     <p className="mb-2">Top it off with enough RSN and ERG.</p>
                     <p className="mb-2">Put in collateral and receive reporting permits.</p>
                     <p>Enjoy reporting and getting rewards.</p>
