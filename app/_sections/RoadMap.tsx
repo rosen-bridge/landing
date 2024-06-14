@@ -95,7 +95,7 @@ export default function RoadMap() {
                             completed: true,
                         },{
                             description: "Bitcoin bridge",
-                            inProgress: true,
+                            completed: true,
                         },{
                             description: "Dogecoin bridge",
                         },{
