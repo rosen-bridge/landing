@@ -60,7 +60,7 @@ export default function RoadMap() {
                         {
                             description: "EVM chain adaptor",
                             completed: false,
-                            inProgress: false,
+                            inProgress: true,
                         },{
                             description: "Ethereum bridge",
                             inProgress: true,
@@ -79,7 +79,8 @@ export default function RoadMap() {
                             description: "Cold wallets activation",
                             inProgress: true,
                         },{
-                            description: "Cross-chain bridging (Ethereum-Cardano bridge)",
+                            description: "Seamless cross-chain bridging between supported chains",
+                            completed: true,
                         },{
                             description: "Additional data sources support for integrated chains",
                             inProgress: true,
@@ -107,10 +108,12 @@ export default function RoadMap() {
                     items: [
                         {
                             description: "UI/UX improvements",
+                            inProgress: true,
                         },{
                             description: "Wallet integrations",
                         },{
                             description: "Rosen SDK",
+                            inProgress: true,
                         },
                     ]
                 },{
@@ -121,6 +124,7 @@ export default function RoadMap() {
                             description: "Market making and liquidity provisioning for listed tokens",
                         },{
                             description: "Chain Integration Kit for adding new volunteer chains",
+                            inProgress: true,
                         },{
                             description: "Integration with bridge aggregators and hubs",
                         },{
