@@ -63,7 +63,7 @@ export default function RoadMap() {
                             inProgress: true,
                         },{
                             description: "Ethereum bridge",
-                            inProgress: true,
+                            completed: true,
                         },{
                             description: "Binance Smart Chain bridge",
                         },{
