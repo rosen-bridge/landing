@@ -59,13 +59,13 @@ export default function RoadMap() {
                     items: [
                         {
                             description: "EVM chain adaptor",
-                            completed: false,
-                            inProgress: true,
+                            completed: true,
                         },{
                             description: "Ethereum bridge",
                             completed: true,
                         },{
                             description: "Binance Smart Chain bridge",
+                            inProgress: true,
                         },{
                             description: "More EVM-chains integration",
                         }
@@ -99,6 +99,7 @@ export default function RoadMap() {
                             completed: true,
                         },{
                             description: "Dogecoin bridge",
+                            inProgress: true,
                         },{
                             description: "More non-EVM bridges",
                         }
@@ -122,6 +123,7 @@ export default function RoadMap() {
                             description: "Enable fee payment with RSN token",
                         },{
                             description: "Market making and liquidity provisioning for listed tokens",
+                            inProgress: true,
                         },{
                             description: "Chain Integration Kit for adding new volunteer chains",
                             inProgress: true,
