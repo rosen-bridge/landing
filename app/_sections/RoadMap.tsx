@@ -65,7 +65,7 @@ export default function RoadMap() {
                             completed: true,
                         },{
                             description: "Binance Smart Chain bridge",
-                            inProgress: true,
+                            completed: true,
                         },{
                             description: "More EVM-chains integration",
                         }
@@ -99,7 +99,7 @@ export default function RoadMap() {
                             completed: true,
                         },{
                             description: "Dogecoin bridge",
-                            inProgress: true,
+                            completed: true,
                         },{
                             description: "More non-EVM bridges",
                         }
