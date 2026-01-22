@@ -101,6 +101,15 @@ export default function RoadMap() {
                             description: "Dogecoin bridge",
                             completed: true,
                         },{
+                            description: "Firo bridge",
+                            inProgress: true,
+                        },{
+                            description: "Nervos Network bridge",
+                            inProgress: true,
+                        },{
+                            description: "Handshake bridge",
+                            inProgress: true,
+                        },{
                             description: "More non-EVM bridges",
                         }
                     ]
