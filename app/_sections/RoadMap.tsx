@@ -102,7 +102,7 @@ export default function RoadMap() {
                             completed: true,
                         },{
                             description: "Firo bridge",
-                            inProgress: true,
+                            completed: true,
                         },{
                             description: "Nervos Network bridge",
                             inProgress: true,
